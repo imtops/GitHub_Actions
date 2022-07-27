@@ -26,7 +26,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Determine next version
-      uses: gps/determine_next_version@main
+      uses: gps/determine_next_version@master
       id: next_version
       with:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

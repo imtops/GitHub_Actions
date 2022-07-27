@@ -47,9 +47,9 @@ jobs:
     - name: Create release
       uses: gps/create-github-release@master
       with:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      TAG_NAME: ${{ github.ref }}
-      ARTIFACTS: |
+       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       TAG_NAME: ${{ github.ref }}
+       ARTIFACTS: |
         dist/foo ==> foo
         dist/bar ==> bar
       env:

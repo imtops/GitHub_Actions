@@ -25,6 +25,19 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
+    - name: Determine next version
+      uses: gps/determine_next_version@main
+      id: next_version
+      with:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG_PREFIX: v
+
+    - name: Tag commit
+      uses: gps/tag_commit@master
+      with:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG_NAME: v${{steps.next_version.outputs.NEXT_BUILD_VERSION}}
+        
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 

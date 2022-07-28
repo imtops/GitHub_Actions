@@ -17,7 +17,7 @@
         </repository>
         <repository>
           <id>github</id>
-          <url>https://github.com/imtops/GitHub_Actions</url>
+          <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -29,8 +29,8 @@
   <servers>
     <server>
       <id>github</id>
-      <username>imtops@empays.com</username>
-      <password>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</password>
+      <username>USERNAME</username>
+      <password>TOKEN</password>
     </server>
   </servers>
 </settings>

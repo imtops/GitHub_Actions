@@ -13,7 +13,7 @@
       <repositories>
         <repository>
           <id>central</id>
-          <url>https://repo1.maven.org/maven2</url>
+          <url>https://github.com/imtops/GitHub_Actions</url>
         </repository>
         <repository>
           <id>github</id>

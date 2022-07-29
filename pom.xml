@@ -42,7 +42,7 @@
    		<repository>
      			<id>github</id>
      			<name>GitHub OWNER Apache Maven Packages</name>
-     			<url>https://github.com/imtops/GitHub_Actions</url>
+     			<url>https://maven.pkg.github.com/imtops/GitHub_Actions/</url>
    		</repository>
 	</distributionManagement> 
 </project>

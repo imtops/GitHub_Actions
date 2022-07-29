@@ -17,7 +17,7 @@
         </repository>
         <repository>
           <id>github</id>
-          <url>https://github.com/imtops/GitHub_Actions</url>
+          <url>https://maven.pkg.github.com/imtops/GitHub_Actions</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
